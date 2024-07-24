@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="index, follow" />
+    <meta name="language" content="English" />
+
+    <meta name="author" content="slavivna" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="main.js"></script>
+
+    <title>Dashboard</title>
+  </head>
+  <body>
+    <main class="main">
+      <!--  -->
+      <aside class="sidebar">
+        <div class="sidebar__menu">
+          <header class="sidebar__header">
+            <img src="./image/logo.svg" alt="logo" />
+            <h1 class="sidebar__title">
+              Dashboard
+              <span class="version">v.01</span>
+            </h1>
+          </header>
+
+          <nav class="sidebar__nav">
+            <ul class="sidebar__list">
+              <li class="sidebar__item">
+                <a href="#" class="sidebar__link">
+                  <img
+                    src="./image/key-square.svg"
+                    alt="Dashboard Icon"
+                    class="sidebar__icon"
+                  />
+                  <span class="sidebar__text">Dashboard</span>
+                  <!-- <img
+                    src="./image/Vector.svg"
+                    alt="Chevron Right"
+                    class="sidebar__chevron"
+                  /> -->
+                </a>
+              </li>
+              <li class="sidebar__item">
+                <a href="#" class="sidebar__link">
+                  <img
+                    src="./image/3d-square 1.svg"
+                    alt="Product Icon"
+                    class="sidebar__icon"
+                  />
+                  <span class="sidebar__text">Product</span>
+                  <img
+                    src="./image/Vector.svg"
+                    alt="Chevron Right"
+                    class="sidebar__chevron"
+                  />
+                </a>
+              </li>
+              <li class="sidebar__item active_item">
+                <a href="#" class="sidebar__link">
+                  <img
+                    src="./image/user-square 1.svg"
+                    alt="Customers Icon"
+                    class="sidebar__icon"
+                  />
+                  <span class="sidebar__text">Customers</span>
+                  <img
+                    src="./image/Vector.svg"
+                    alt="Chevron Right"
+                    class="sidebar__chevron"
+                  />
+                </a>
+              </li>
+              <li class="sidebar__item">
+                <a href="#" class="sidebar__link">
+                  <img
+                    src="./image/wallet-money 2.png"
+                    alt="Income Icon"
+                    class="sidebar__icon"
+                  />
+                  <span class="sidebar__text">Income</span>
+                  <img
+                    src="./image/Vector.svg"
+                    alt="Chevron Right"
+                    class="sidebar__chevron"
+                  />
+                </a>
+              </li>
+              <li class="sidebar__item">
+                <a href="#" class="sidebar__link">
+                  <img
+                    src="./image/discount-shape 1.png"
+                    alt="Promote Icon"
+                    class="sidebar__icon"
+                  />
+                  <span class="sidebar__text">Promote</span>
+                  <img
+                    src="./image/Vector.svg"
+                    alt="Chevron Right"
+                    class="sidebar__chevron"
+                  />
+                </a>
+              </li>
+              <li class="sidebar__item">
+                <a href="#" class="sidebar__link">
+                  <img
+                    src="./image/message-question 1.png"
+                    alt="Help Icon"
+                    class="sidebar__icon"
+                  />
+                  <span class="sidebar__text">Help</span>
+                  <img
+                    src="./image/Vector.svg"
+                    alt="Chevron Right"
+                    class="sidebar__chevron"
+                  />
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <!-- ----   avatar ----- -->
+        <div class="sidebar__profile">
+          <img src="./image/avatar.png" alt="Avatar" class="sidebar__avatar" />
+          <div class="sidebar__info">
+            <span class="sidebar__name">Evano</span>
+            <span class="sidebar__position">Progect Manager</span>
+          </div>
+        </div>
+      </aside>
+      <!--     --------------         -->
+
+      <div class="container">
+        <div class="greeting">Hello Evano 👋🏼,</div>
+
+        <!-- card -->
+        <div class="wrapper">
+          <!-- main card -->
+
+          <div class="wrap-border">
+            <div class="wrap-header">
+              <h3 class="title">All Customers</h3>
+              <p class="description">Active Members</p>
+            </div>
+
+            <div class="input-container">
+              <input type="search" placeholder="Search" class="input-search" />
+            </div>
+          </div>
+
+          <table class="customers-table">
+            <thead>
+              <tr>
+                <th>Customer Name</th>
+                <th>Company</th>
+                <th>Phone Number</th>
+                <th>Email</th>
+                <th>Country</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Jane Cooper</td>
+                <td>Microsoft</td>
+                <td>(225) 555-0118</td>
+                <td>jane@microsoft.com</td>
+                <td>United States</td>
+                <td><button class="status-btn active">Active</button></td>
+              </tr>
+              <tr>
+                <td>Floyd Miles</td>
+                <td>Yahoo</td>
+                <td>(205) 555-0100</td>
+                <td>floyd@yahoo.com</td>
+                <td>Kiribati</td>
+                <td><button class="status-btn inactive">Inactive</button></td>
+              </tr>
+              <tr>
+                <td>Ronald Richards</td>
+                <td>Adobe</td>
+                <td>(302) 555-0107</td>
+                <td>ronald@adobe.com</td>
+                <td>Israel</td>
+                <td><button class="status-btn inactive">Inactive</button></td>
+              </tr>
+              <tr>
+                <td>Marvin McKinney</td>
+                <td>Tesla</td>
+                <td>(252) 555-0126</td>
+                <td>marvin@tesla.com</td>
+                <td>Iran</td>
+                <td><button class="status-btn active">Active</button></td>
+              </tr>
+              <tr>
+                <td>Jerome Bell</td>
+                <td>Google</td>
+                <td>(629) 555-0129</td>
+                <td>jerome@google.com</td>
+                <td>Réunion</td>
+                <td><button class="status-btn active">Active</button></td>
+              </tr>
+              <tr>
+                <td>Kathryn Murphy</td>
+                <td>Microsoft</td>
+                <td>(406) 555-0120</td>
+                <td>kathryn@microsoft.com</td>
+                <td>Curaçao</td>
+                <td><button class="status-btn active">Active</button></td>
+              </tr>
+              <tr>
+                <td>Jacob Jones</td>
+                <td>Yahoo</td>
+                <td>(208) 555-0112</td>
+                <td>jacob@yahoo.com</td>
+                <td>Brazil</td>
+                <td><button class="status-btn active">Active</button></td>
+              </tr>
+              <tr>
+                <td>Kristin Watson</td>
+                <td>Facebook</td>
+                <td>(704) 555-0127</td>
+                <td>kristin@facebook.com</td>
+                <td>Åland Islands</td>
+                <td><button class="status-btn inactive">Inactive</button></td>
+              </tr>
+            </tbody>
+          </table>
+
+          <div class="pagination-info">
+            <span>Showing data 1 to 8 of 256K entries</span>
+            <div class="pagination">
+              <span class="page-link"> < </span>
+              <span class="page-link active-link">1</span>
+              <span class="page-link">2</span>
+              <span class="page-link">3</span>
+              <span class="page-link">4</span>
+              <span class="page-link without">...</span>
+              <span class="page-link">40</span>
+              <span class="page-link"> > </span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- --------------- -->
+    </main>
+  </body>
+</html>
