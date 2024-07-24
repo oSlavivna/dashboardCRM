@@ -193,10 +193,22 @@ div.sidebar__menu > nav > ul > li:nth-child(1) {
   border-radius: 8px;
   margin-bottom: 0.7rem;
 }
-.active_item {
+/* v2 */
+.sidebar__item:hover {
   background-color: var(--violet);
   color: var(--white);
+  transition: transform 0.2s ease;
 }
+.sidebar__item:hover .sidebar__icon,
+.sidebar__item:hover .sidebar__chevron {
+  filter: brightness(0) invert(1);
+}
+/* v2 */
+
+/* .active_item {
+  background-color: var(--violet);
+  color: var(--white);
+} */
 .sidebar__link {
   color: inherit;
   display: flex;
@@ -216,9 +228,9 @@ div.sidebar__menu > nav > ul > li:nth-child(1) {
   width: 6px;
   height: 12px;
 }
-.active_item > .sidebar__link > .sidebar__chevron {
+/* .active_item > .sidebar__link > .sidebar__chevron {
   filter: brightness(0) invert(1);
-}
+} */
 /* ---avatar */
 .sidebar__profile {
   display: flex;
