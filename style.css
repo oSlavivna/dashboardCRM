@@ -639,6 +639,8 @@ div.sidebar__menu > nav > ul > li:nth-child(1) {
     width: 24%;
     margin-left: 10rem;
   }
-
+  .customers-table tbody td {
+    padding: 10px 4px;
+  }
   /*  */
 }
