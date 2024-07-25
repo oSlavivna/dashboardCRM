@@ -564,7 +564,8 @@ div.sidebar__menu > nav > ul > li:nth-child(1) {
 
 @media (max-width: 480px) {
   .sidebar {
-    width: 8%;
+    /* width: 8%; */
+    width: 45px;
     height: 100%;
     padding: 8px 2px;
   }
@@ -575,14 +576,19 @@ div.sidebar__menu > nav > ul > li:nth-child(1) {
     gap: 4px;
   }
   .sidebar__header img {
-    width: 20px;
-    height: 20px;
+    display: none;
   }
   .btn {
-    padding: 2px 4px;
+    padding: 5px 7px;
   }
   .sidebar__title {
     display: none;
+  }
+
+  .sidebar__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   .sidebar__item {
     padding: 8px 5px;
@@ -616,7 +622,8 @@ div.sidebar__menu > nav > ul > li:nth-child(1) {
   }
   /*  */
   .sidebar__profile {
-    bottom: 36.75rem;
+    /* bottom: 36.75rem; */
+    bottom: 26%;
   }
   /* -----sidebar---- */
 
@@ -646,8 +653,8 @@ div.sidebar__menu > nav > ul > li:nth-child(1) {
   }
 
   .input-container {
-    width: 24%;
-    margin-left: 10rem;
+    width: 26%;
+    margin-left: 8rem;
   }
   .customers-table tbody td {
     padding: 10px 4px;
