@@ -12,3 +12,23 @@ openBtn.addEventListener("click", function () {
   sidebar.classList.remove("hidebar");
   sidebar.classList.add("hidden");
 });
+
+// /*  bonce hover  */
+const btns = document.querySelectorAll(".status-btn");
+
+btns.forEach((button) => {
+  console.log(button);
+
+  button.addEventListener("click", function () {
+    if (this.classList.contains("active")) {
+      this.classList.remove("active");
+      this.classList.add("inactive");
+      this.textContent = "Inactive";
+    } else if (this.classList.contains("inactive")) {
+      this.classList.remove("inactive");
+      this.classList.add("active");
+      this.classList.add("bounce");
+      this.textContent = "Active";
+    }
+  });
+});
