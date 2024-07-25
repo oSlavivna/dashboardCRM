@@ -143,8 +143,7 @@ body {
 /*  */
 .sidebar {
   background-color: var(--white);
-  /* width: 25%; */
-  width: 20%;
+  max-width: 20%;
   height: 100vh;
   padding: 36px 28px 76px;
 
@@ -154,6 +153,8 @@ body {
   gap: 8px;
 
   position: relative;
+  z-index: 10;
+  transition: transform 0.3s ease;
 }
 /* .sidebar__menu {
 } */
@@ -214,6 +215,8 @@ div.sidebar__menu > nav > ul > li:nth-child(1) {
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  width: 100%;
 }
 .sidebar__icon {
   width: 24px;
@@ -253,7 +256,6 @@ div.sidebar__menu > nav > ul > li:nth-child(1) {
 }
 .sidebar__position {
   font-size: 12px;
-  /* font-weight: 400; */
   color: var(--grey--mid);
 }
 /* ---------
@@ -275,7 +277,6 @@ div.sidebar__menu > nav > ul > li:nth-child(1) {
   font-size: 24px;
   font-weight: 500;
   line-height: 1.4;
-  /* margin-bottom: 50px; */
 
   position: fixed;
   top: 40px;
@@ -324,7 +325,7 @@ div.sidebar__menu > nav > ul > li:nth-child(1) {
 
 .input-search {
   width: 100%;
-  padding: 10px 10px 10px 40px; /* Відступ для розміщення іконки */
+  padding: 10px 10px 10px 40px;
   box-sizing: border-box;
 
   border-radius: 10px;
@@ -437,13 +438,103 @@ div.sidebar__menu > nav > ul > li:nth-child(1) {
   border: none;
   padding: 0;
 }
-
-/* ------------- */
-/* Анімація SVG */
-.svg-icon {
-  transition: transform 0.3s ease;
+.hidden {
+  display: none;
 }
+/* ------------- */
+@media (max-width: 1146px) {
+  .hidden {
+    display: block;
+    transition: 0.75s ease-out;
+  }
 
-.svg-icon:hover {
-  transform: scale(1.1);
+  .hidebar {
+    transition: 0.75s ease-out;
+    transform: translateX(-110%);
+  }
+
+  .sidebar {
+    padding: 18px 12px;
+    box-shadow: -1px -1px 20px var(--violet);
+
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+
+  .sidebar__header {
+    justify-content: space-between;
+    margin-bottom: 24px;
+  }
+  .sidebar__header img {
+    width: 30px;
+    height: 30px;
+  }
+  .sidebar__title {
+    font-size: 16px;
+    margin: 0;
+  }
+  .sidebar__item {
+    margin: 0;
+  }
+  div.sidebar__menu > nav > ul > li:nth-child(1) {
+    margin-bottom: 0;
+  }
+
+  .btn {
+    border: 1px solid var(--violet);
+    background-color: transparent;
+    border-radius: 4px;
+    padding: 8px 12px;
+    color: var(--violet);
+    cursor: pointer;
+
+    width: auto;
+    height: fit-content;
+  }
+
+  .open-btn {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 9;
+    cursor: pointer;
+  }
+
+  /* ----------- */
+  .container {
+    padding: 20px 12px;
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+  }
+  .greeting {
+    font-size: 18px;
+    line-height: 1.4;
+    width: inherit;
+    position: absolute;
+    top: 20px;
+    left: 5%;
+  }
+  .wrapper {
+    margin: 30px auto;
+    padding: 20px 12px;
+  }
+  .title {
+    font-size: 16px;
+    margin-bottom: 4px;
+  }
+  /* table */
+  .customers-table {
+    margin-top: 20px;
+    font-size: 14px;
+    line-height: 2.5;
+    text-align: left;
+  }
+  .customers-table thead::before {
+    top: 36px;
+    left: 0;
+    width: 100%;
+  }
 }
