@@ -146,6 +146,7 @@ body {
 /*  */
 .sidebar {
   background-color: var(--white);
+  width: 25%;
   max-width: 20%;
   height: 100vh;
   padding: 36px 28px 76px;
