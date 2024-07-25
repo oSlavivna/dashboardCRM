@@ -17,8 +17,7 @@ openBtn.addEventListener("click", function () {
 const btns = document.querySelectorAll(".status-btn");
 
 btns.forEach((button) => {
-  console.log(button);
-
+ 
   button.addEventListener("click", function () {
     if (this.classList.contains("active")) {
       this.classList.remove("active");
