@@ -562,10 +562,17 @@ div.sidebar__menu > nav > ul > li:nth-child(1) {
   }
 }
 
-@media (max-width: 430px) {
+@media (max-width: 480px) {
   .sidebar {
     width: 8%;
     height: 100%;
+    padding: 8px 2px;
+  }
+  .sidebar__header {
+    flex-direction: column-reverse;
+    align-content: center;
+    flex-wrap: wrap;
+    gap: 4px;
   }
   .sidebar__header img {
     width: 20px;
@@ -576,6 +583,9 @@ div.sidebar__menu > nav > ul > li:nth-child(1) {
   }
   .sidebar__title {
     display: none;
+  }
+  .sidebar__item {
+    padding: 8px 5px;
   }
 
   .sidebar__link > span,
@@ -606,7 +616,7 @@ div.sidebar__menu > nav > ul > li:nth-child(1) {
   }
   /*  */
   .sidebar__profile {
-    bottom: 48.75rem;
+    bottom: 36.75rem;
   }
   /* -----sidebar---- */
 
